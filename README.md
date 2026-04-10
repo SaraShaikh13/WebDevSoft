@@ -237,4 +237,4 @@ MIT License — free to use and modify for personal and commercial projects.
 
 ---
 
-Built with ❤ by the WebDevSoft Team · [Live Demo](#) · [Report Bug](#)
+Built with ❤ by the SARA · [Live Demo](#) · [Report Bug](#)
