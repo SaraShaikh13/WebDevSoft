@@ -1,0 +1,65 @@
+.discussion-section { margin-top: 40px; }
+.disc-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; }
+.disc-header h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 2px; }
+.disc-subtitle { font-size: 0.82rem; color: var(--text-muted); }
+.disc-form {
+  background: var(--bg-card); border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg); padding: 24px; margin-bottom: 24px;
+}
+.disc-list { display: flex; flex-direction: column; gap: 12px; }
+.disc-card {
+  display: flex; gap: 14px; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px; transition: border-color 0.2s;
+}
+.disc-card:hover { border-color: var(--border-light); }
+.disc-card.resolved { border-left: 3px solid var(--green); }
+.disc-card.pinned { border-left: 3px solid var(--accent); }
+.disc-left { display: flex; flex-direction: column; align-items: center; gap: 10px; padding-top: 2px; flex-shrink: 0; }
+.upvote-btn {
+  display: flex; flex-direction: column; align-items: center; gap: 2px; background: none; border: 1px solid var(--border);
+  border-radius: 8px; padding: 6px 10px; color: var(--text-muted); font-size: 0.75rem; font-weight: 600; transition: all 0.2s;
+}
+.upvote-btn:hover { border-color: var(--accent); color: var(--accent); }
+.reply-count { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 0.72rem; color: var(--text-muted); }
+.disc-main { flex: 1; min-width: 0; }
+.disc-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.pin-badge, .resolved-badge { font-size: 0.72rem; font-weight: 600; }
+.resolved-badge { color: var(--green); }
+.disc-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+.disc-tag {
+  background: var(--accent-dim); color: var(--accent-light); border-radius: 4px;
+  padding: 1px 7px; font-size: 0.7rem; font-family: var(--mono);
+}
+.disc-title {
+  background: none; border: none; color: var(--text-primary); font-size: 0.95rem; font-weight: 600;
+  text-align: left; cursor: pointer; padding: 0; margin-bottom: 8px; line-height: 1.4; width: 100%;
+  transition: color 0.2s;
+}
+.disc-title:hover { color: var(--accent-light); }
+.disc-meta { display: flex; align-items: center; gap: 8px; font-size: 0.78rem; color: var(--text-muted); flex-wrap: wrap; }
+.disc-avatar {
+  width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--green));
+  display: grid; place-items: center; font-size: 0.72rem; font-weight: 700; color: #fff; flex-shrink: 0;
+}
+.disc-avatar.small { width: 22px; height: 22px; font-size: 0.65rem; }
+.instructor-tag {
+  background: var(--orange-dim); color: var(--orange); border-radius: 4px;
+  padding: 1px 6px; font-size: 0.68rem; font-weight: 700;
+}
+.disc-time { color: var(--text-muted); }
+.disc-expanded { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+.disc-body { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px; white-space: pre-wrap; }
+.disc-actions { display: flex; gap: 8px; margin-bottom: 16px; }
+.disc-action-btn {
+  background: none; border: 1px solid var(--border); border-radius: 6px;
+  padding: 4px 12px; font-size: 0.78rem; color: var(--text-muted); transition: all 0.2s;
+}
+.disc-action-btn:hover { border-color: var(--green); color: var(--green); }
+.replies-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+.reply-card { background: var(--bg-secondary); border-radius: 8px; padding: 12px 14px; }
+.reply-card.instructor-reply { border-left: 2px solid var(--orange); }
+.reply-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.reply-author { font-size: 0.82rem; font-weight: 600; }
+.reply-body { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
+.reply-input-row { display: flex; align-items: center; gap: 8px; }
+.reply-input { flex: 1; padding: 8px 12px; font-size: 0.88rem; }

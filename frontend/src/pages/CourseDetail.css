@@ -1,0 +1,98 @@
+.cd-hero { background: var(--bg-secondary); border-bottom: 1px solid var(--border); padding: 48px 0; }
+.cd-hero-grid { display: grid; grid-template-columns: 1fr 360px; gap: 48px; align-items: start; }
+.cd-breadcrumb { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 16px; }
+.cd-breadcrumb a { color: var(--accent-light); }
+.cd-breadcrumb a:hover { text-decoration: underline; }
+.cd-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; margin-bottom: 14px; line-height: 1.3; }
+.cd-desc { color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; }
+.cd-meta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; font-size: 0.85rem; color: var(--text-secondary); }
+
+.cd-enroll-card {
+  background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-lg);
+  padding: 24px; position: sticky; top: 100px;
+}
+.cd-thumb { width: 100%; border-radius: var(--radius); margin-bottom: 20px; aspect-ratio: 16/9; object-fit: cover; }
+.cd-price { font-size: 1.6rem; font-weight: 700; margin-bottom: 16px; }
+.price-free { color: var(--green); }
+.price-paid { color: var(--text-primary); }
+.enrolled-badge {
+  background: var(--green-dim); border: 1px solid rgba(0,212,160,0.3); color: var(--green);
+  padding: 12px; border-radius: var(--radius); text-align: center; font-weight: 600; margin-bottom: 14px;
+}
+.cd-login-hint { font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 10px; }
+.cd-login-hint a { color: var(--accent-light); }
+.cd-includes { list-style: none; margin-top: 20px; display: flex; flex-direction: column; gap: 8px; }
+.cd-includes li { font-size: 0.85rem; color: var(--text-secondary); }
+
+.cd-body { padding: 48px 24px; }
+.cd-main { max-width: 760px; }
+.cd-section { margin-bottom: 40px; }
+.cd-section h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 20px; }
+.lesson-count { font-size: 0.9rem; color: var(--text-muted); font-weight: 400; }
+
+.outcomes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.outcome-item { display: flex; gap: 10px; font-size: 0.88rem; color: var(--text-secondary); }
+.outcome-item span { color: var(--green); font-weight: 700; flex-shrink: 0; }
+
+.req-list { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; color: var(--text-secondary); font-size: 0.88rem; }
+
+.lesson-list { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.lesson-item { border-bottom: 1px solid var(--border); cursor: pointer; }
+.lesson-item:last-child { border-bottom: none; }
+.lesson-header { display: flex; align-items: center; gap: 12px; padding: 14px 16px; transition: background 0.15s; }
+.lesson-header:hover { background: var(--bg-secondary); }
+.lesson-num { width: 28px; height: 28px; border-radius: 50%; background: var(--accent-dim); color: var(--accent-light); font-size: 0.78rem; font-weight: 700; display: grid; place-items: center; flex-shrink: 0; }
+.lesson-title { flex: 1; font-size: 0.9rem; font-weight: 500; }
+.lesson-meta { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.lesson-dur { font-size: 0.78rem; color: var(--text-muted); font-family: var(--mono); }
+.lesson-toggle { font-size: 0.7rem; color: var(--text-muted); }
+.lesson-content { padding: 14px 16px 18px 56px; background: var(--bg-secondary); font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .cd-hero-grid { grid-template-columns: 1fr; }
+  .cd-enroll-card { position: static; }
+  .outcomes-grid { grid-template-columns: 1fr; }
+}
+
+/* Tabs */
+.cd-tabs-bar {
+  background: var(--bg-secondary); border-bottom: 1px solid var(--border);
+  position: sticky; top: 70px; z-index: 100;
+}
+.cd-tabs { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+.cd-tabs::-webkit-scrollbar { display: none; }
+.cd-tab {
+  padding: 14px 20px; background: none; border: none; border-bottom: 2px solid transparent;
+  color: var(--text-secondary); font-size: 0.9rem; font-weight: 500; white-space: nowrap;
+  cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px;
+}
+.cd-tab:hover { color: var(--text-primary); }
+.cd-tab.active { color: var(--accent-light); border-bottom-color: var(--accent-light); }
+.tab-badge {
+  background: var(--accent-dim); color: var(--accent-light);
+  border-radius: 10px; padding: 1px 7px; font-size: 0.7rem; font-weight: 700; font-family: var(--mono);
+}
+
+/* Progress mini in enroll card */
+.cd-progress-mini { margin-top: 10px; }
+.cd-prog-bar { height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden; margin-bottom: 4px; }
+.cd-prog-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--green)); border-radius: 3px; transition: width 0.5s; }
+.cd-progress-mini span { font-size: 0.75rem; color: var(--text-muted); }
+
+/* Meta items with icons */
+.cd-meta-item { display: inline-flex; align-items: center; gap: 4px; }
+.cd-rating { color: #f59e0b; font-weight: 600; font-size: 0.88rem; }
+
+/* includes icons */
+.cd-includes li { display: flex; align-items: center; gap: 8px; }
+.cd-includes svg { color: var(--green); flex-shrink: 0; }
+
+/* Lesson num done state */
+.lesson-num.done { background: var(--green); border-color: var(--green); color: #fff; }
+
+/* Certificate banner */
+.cert-earned-banner {
+  display: flex; align-items: center; gap: 10px; background: var(--green-dim);
+  border: 1px solid rgba(0,212,160,0.3); border-radius: var(--radius); padding: 14px 16px;
+  color: var(--green); font-size: 0.9rem; margin-bottom: 20px; flex-wrap: wrap;
+}

@@ -1,0 +1,50 @@
+.review-section { margin-top: 40px; }
+.review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.review-header h2 { font-size: 1.25rem; font-weight: 700; }
+
+.review-summary {
+  display: flex; gap: 32px; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 24px; margin-bottom: 28px; flex-wrap: wrap;
+}
+.avg-block { text-align: center; min-width: 100px; }
+.avg-score { font-size: 3rem; font-weight: 800; color: #f59e0b; line-height: 1; margin-bottom: 6px; }
+.avg-label { font-size: 0.78rem; color: var(--text-muted); margin-top: 6px; }
+.dist-bars { flex: 1; display: flex; flex-direction: column; gap: 6px; justify-content: center; }
+.dist-row { display: flex; align-items: center; gap: 10px; }
+.dist-bar-wrap { flex: 1; }
+.dist-bar { height: 8px; background: var(--bg-secondary); border-radius: 4px; overflow: hidden; }
+.dist-fill { height: 100%; background: #f59e0b; border-radius: 4px; transition: width 0.5s ease; }
+.dist-stars { flex-shrink: 0; }
+.dist-count { font-size: 0.78rem; color: var(--text-muted); width: 24px; text-align: right; font-family: var(--mono); }
+
+.review-form {
+  background: var(--bg-card); border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg); padding: 24px; margin-bottom: 28px;
+}
+.review-form h3 { font-size: 1rem; font-weight: 700; margin-bottom: 18px; }
+.star-input { display: flex; gap: 4px; }
+.star-btn { background: none; border: none; padding: 2px; color: #f59e0b; transition: transform 0.15s; }
+.star-btn:hover { transform: scale(1.2); }
+.star-btn.filled { color: #f59e0b; }
+.star-btn:not(.filled) { color: var(--border-light); }
+
+.reviews-list { display: flex; flex-direction: column; gap: 16px; }
+.review-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px;
+}
+.review-author { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+.reviewer-avatar {
+  width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--green));
+  display: grid; place-items: center; font-weight: 700; color: #fff; font-size: 0.9rem; flex-shrink: 0;
+}
+.reviewer-name { font-weight: 600; font-size: 0.9rem; }
+.review-date { font-size: 0.75rem; color: var(--text-muted); }
+.review-title { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+.review-body { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px; }
+.review-helpful { display: flex; gap: 8px; }
+.helpful-btn {
+  display: flex; align-items: center; gap: 6px; background: none; border: 1px solid var(--border);
+  border-radius: 6px; padding: 4px 12px; font-size: 0.78rem; color: var(--text-muted); transition: all 0.2s;
+}
+.helpful-btn:hover { border-color: var(--accent); color: var(--accent); }
